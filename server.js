@@ -12,10 +12,6 @@ app.use(express.json());
 
 app.use("/api/v1/school",schoolRouters);
 
-app.get("/",(req,res)=>{
-return res.send("Welcome!");
-})
-
 app.listen(PORT,()=>{
     console.log(`Sever is listening on ${PORT}`);
 })
